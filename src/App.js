@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <Header totalIncome={totalIncome} />
-      <IncomeForm />
+      <IncomeForm income={income} setIncome={setIncome} />
+      {income.length > 0 ? income[0].desc : ""}
     </div>
   );
 }
